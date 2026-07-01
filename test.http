@@ -1,0 +1,14 @@
+### Ambil semua to-do
+GET http://localhost:8080/todos
+
+### Tambah to-do baru
+POST http://localhost:8080/todos
+Content-Type: application/json
+
+{"task": "Belajar deploy ke Railway"}
+
+### Tandai selesai
+PUT http://localhost:8080/todos/2
+Content-Type: application/json
+
+{"done": true}
